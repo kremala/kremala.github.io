@@ -949,7 +949,7 @@ function paixnidi(){
         btn.id= gr;
         btn.setAttribute("onclick","uparxei(this.id)");
         document.getElementById("grammata").appendChild(btn);
-        if(i==(ab.length/3)-1||i==(ab.length*2/3)-1){
+        if(i==(ab.length/4)-1||i==(ab.length*2/4)-1||i==(ab.length*3/4)-1){
             var br = document.createElement("br");
             document.getElementById("grammata").appendChild(br);
         }
@@ -1001,11 +1001,11 @@ function topo8ethsh(){
 
     for ( var i = 0; i < ab.length; i++ ){
         var gr = ab.charAt(i);
-        document.getElementById(gr).style.width=(x/8.5)+"px";
-        document.getElementById(gr).style.height=(x/8.5)+"px";
+        document.getElementById(gr).style.width=(x/7)+"px";
+        document.getElementById(gr).style.height=(x/7)+"px";
     }   
     document.getElementById("grammata").style.bottom = (h*0.0000000001)+"px";
-    document.getElementById("grammata").style.left= (y+(x-(x*1.01097))/2)+"px";
+    document.getElementById("grammata").style.left= (y+(x-(x*0.9))/2)+"px";
 
     document.getElementById("box").style.width=(x/2.1)+"px";
     document.getElementById("box").style.height=(h/3.5)+"px";
