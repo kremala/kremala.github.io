@@ -1001,8 +1001,8 @@ function topo8ethsh(){
 
     for ( var i = 0; i < ab.length; i++ ){
         var gr = ab.charAt(i);
-        document.getElementById(gr).style.width=(x/7)+"px";
-        document.getElementById(gr).style.height=(x/7)+"px";
+        document.getElementById(gr).style.width=(x/6.5)+"px";
+        document.getElementById(gr).style.height=(x/6.5)+"px";
     }   
     document.getElementById("grammata").style.bottom = (h*0.0000000001)+"px";
     document.getElementById("grammata").style.left= (y+(x-(x*0.9))/2)+"px";
