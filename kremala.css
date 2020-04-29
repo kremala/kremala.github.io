@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(16,2,1);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+    color: rgb(242,28,36);
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+#grammata button{
+    background-color:rgba(0, 0, 0, 0.178);
+    color: rgb(242,28,36);
+    font-weight: bold;
+    border-color: rgb(242,28,36);
+    border-width: 0.5px;
+    margin: 1px;
+}
+
+#grammata{
+    position: fixed;
+}  
+
+#tainia{
+    font-weight: bold;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+    
+    word-break: normal;
+}
+   
+span{
+    background-color:rgba(0, 0, 0, 0);
+    color: rgb(242,28,36);
+    font-weight: bold;
+}
+
+#box{
+    text-align: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.575);
+}
