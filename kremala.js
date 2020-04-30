@@ -922,7 +922,8 @@ var tainies = [
     var counterla8osgrammata;
     var ab = "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ";
     
-    function paixnidi(){ 
+    function paixnidi(){
+        mege8os();
         document.getElementById("grammata").style.margin="auto";
         document.getElementById("box").style.backgroundImage = "url('kremala0.jpg')";  
         document.getElementById("grammata").innerHTML = "" ;
@@ -1011,4 +1012,15 @@ var tainies = [
         document.getElementById("grammata").style.marginBottom="75px";
         document.getElementById("grammata").style.marginLeft="96.25px";
     }
-        
+     
+    function mege8os(){
+        var w = innerWidth;
+        var h = innerHeight; 
+
+        if(h>w){
+            document.body.style.zoom=((w/55.5)+100)+"%";
+        }else{
+            document.body.style.zoom=((h/36)+100)+"%";
+            console.log("width = "+w+(" height = ")+h)
+        }   
+    }
