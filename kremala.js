@@ -1017,9 +1017,9 @@ var tainies = [
         var w = innerWidth;
         var h = innerHeight; 
 
-        if(h>w){
-            document.body.style.zoom=((w/360)*100)+"%";
+        if(w/h<360/555){
+            document.body.style.zoom=((w/360)*100)+"%";console.log(1);
         }else{
-            document.body.style.zoom=((h/555)*100)+"%";
+            document.body.style.zoom=((h/555)*100)+"%";console.log(2);
         } 
     }
