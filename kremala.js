@@ -1016,10 +1016,9 @@ var tainies = [
     function mege8os(){
         var w = innerWidth;
         var h = innerHeight; 
-
         if(w/h<360/555){
-            document.body.style.zoom=((w/360)*100)+"%";console.log(1);
+            document.body.style.zoom=((w/360)*100)+"%";
         }else{
-            document.body.style.zoom=((h/555)*100)+"%";console.log(2);
+            document.body.style.zoom=((h/555)*100)+"%";
         } 
     }
