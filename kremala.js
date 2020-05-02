@@ -1026,35 +1026,12 @@ var tainies = [
 const scriptURL = 'https://script.google.com/macros/s/AKfycbycWBiwxd_TZMZAk-uHeVnZCubmMr0McvCXxiHiA957Tne0T5M/exec';
 
 function statistics(){
-    var url = 'http://api.ipstack.com/check?access_key=ac299906cc2d26b9860a2e38f6afd2c8';	
-	xmlhttp(url,statistics2);
-}
-
-function statistics2(xhttp){
     var form = new FormData();
-    var txt = xhttp.responseText;
-    var obj = JSON.parse(txt);
-    form.append('ip',obj.ip);
-    form.append('country_name',obj.country_name);
-    form.append('region_name',obj.region_name);
-    form.append('city',obj.city);
-    form.append('zip',obj.zip);
-	form.append('latitude',obj.latitude);
-    form.append('longitude',obj.longitude);
+    //form.append('latitude',obj.latitude);
+    //form.append('longitude',obj.longitude);
     form.append('innerWidth',innerWidth);
     form.append('innerHeight',innerHeight);
     form.append('screenWidth',screen.width);
     form.append('screenHeight',screen.height);
     fetch(scriptURL, { method: 'POST', body: form });
-}
-
-function xmlhttp(url,myfunction) {
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			myfunction(this);
-		}
-	};
-	xhttp.open("GET", url, true);	
-	xhttp.send();						
 }
