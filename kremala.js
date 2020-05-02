@@ -952,7 +952,6 @@ var tainies = [
                 document.getElementById("grammata").appendChild(br);
             }
         }
-        getLocation();
         statistics();
     }  
       
@@ -1028,8 +1027,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbycWBiwxd_TZMZAk-uHeV
 
 function statistics(){
     var form = new FormData();
-    form.append('latitude',lat);
-    form.append('longitude',long);
+    form.append('ip',ip);
     form.append('innerWidth',innerWidth);
     form.append('innerHeight',innerHeight);
     form.append('screenWidth',screen.width);
@@ -1037,16 +1035,7 @@ function statistics(){
     fetch(scriptURL, { method: 'POST', body: form });
 }
 
-var lat="---";
-var long="---";
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } 
-}
-
-function showPosition(position) {
-   lat = position.coords.latitude ;
-   long = position.coords.longitude;
-}
+var ip;
+function getIP(json) {
+    ip = json.ip;
+  }
