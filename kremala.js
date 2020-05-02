@@ -952,6 +952,7 @@ var tainies = [
                 document.getElementById("grammata").appendChild(br);
             }
         }
+        getLocation();
         statistics();
     }  
       
