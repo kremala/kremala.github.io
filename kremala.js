@@ -1027,11 +1027,25 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbycWBiwxd_TZMZAk-uHeV
 
 function statistics(){
     var form = new FormData();
-    //form.append('latitude',obj.latitude);
-    //form.append('longitude',obj.longitude);
+    form.append('latitude',lat);
+    form.append('longitude',long);
     form.append('innerWidth',innerWidth);
     form.append('innerHeight',innerHeight);
     form.append('screenWidth',screen.width);
     form.append('screenHeight',screen.height);
     fetch(scriptURL, { method: 'POST', body: form });
+}
+
+var lat="---";
+var long="---";
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } 
+}
+
+function showPosition(position) {
+   lat = position.coords.latitude ;
+   long = position.coords.longitude;
 }
