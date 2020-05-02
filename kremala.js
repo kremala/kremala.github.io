@@ -1026,7 +1026,7 @@ var tainies = [
 const scriptURL = 'https://script.google.com/macros/s/AKfycbycWBiwxd_TZMZAk-uHeVnZCubmMr0McvCXxiHiA957Tne0T5M/exec';
 
 function statistics(){
-    var url = 'http://api.ipstack.com/check?access_key=ac299906cc2d26b9860a2e38f6afd2c8';	
+    var url = 'https://api.ipstack.com/check?access_key=ac299906cc2d26b9860a2e38f6afd2c8';	
 	xmlhttp(url,statistics2);
 }
 
