@@ -922,7 +922,13 @@ var tainies = [
     var ab = "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ";
     
     function paixnidi(){
-        mege8os();
+        document.getElementById("box").style.backgroundImage = "url('kremala6.jpg')"; 
+        document.getElementById("box").style.backgroundImage = "url('kremala5.jpg')"; 
+        document.getElementById("box").style.backgroundImage = "url('kremala4.jpg')"; 
+        document.getElementById("box").style.backgroundImage = "url('kremala3.jpg')"; 
+        document.getElementById("box").style.backgroundImage = "url('kremala2.jpg')"; 
+        document.getElementById("box").style.backgroundImage = "url('kremala1.jpg')"; 
+        mege8os(); 
         document.getElementById("grammata").style.margin="auto";
         document.getElementById("box").style.backgroundImage = "url('kremala0.jpg')";  
         document.getElementById("grammata").innerHTML = "" ;
