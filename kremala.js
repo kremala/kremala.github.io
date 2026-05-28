@@ -952,7 +952,7 @@ var tainies = [
                 document.getElementById("grammata").appendChild(br);
             }
         }
-        /**/
+        /**/statistics();
     }  
       
     function uparxei(g){
