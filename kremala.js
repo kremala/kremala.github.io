@@ -922,7 +922,7 @@ var tainies = [
     var ab = "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ";
     
     function paixnidi(){
-        mege8os(); 
+        mege8os();
         document.getElementById("grammata").style.margin="auto";
         document.getElementById("box").style.backgroundImage = "url('kremala0.jpg')";  
         document.getElementById("grammata").innerHTML = "" ;
@@ -952,7 +952,7 @@ var tainies = [
                 document.getElementById("grammata").appendChild(br);
             }
         }
-        /**/statistics();
+        
     }  
       
     function uparxei(g){
@@ -1023,19 +1023,8 @@ var tainies = [
         } 
     }
 
-/**/const scriptURL = 'https://script.google.com/macros/s/AKfycbycWBiwxd_TZMZAk-uHeVnZCubmMr0McvCXxiHiA957Tne0T5M/exec';
 
-function statistics(){
-    var form = new FormData();
-    form.append('ip(kremala)',ip);
-    form.append('innerWidth(kremala)',innerWidth);
-    form.append('innerHeight(kremala)',innerHeight);
-    form.append('screenWidth(kremala)',screen.width);
-    form.append('screenHeight(kremala)',screen.height);
-    fetch(scriptURL, { method: 'POST', body: form });
-}
 
-var ip;
 function getIP(json) {
     ip = json.ip;
   }
